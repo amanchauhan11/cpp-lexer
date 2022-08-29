@@ -1,0 +1,28 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+ 
+  <groupId>io.antlr.cpp</groupId>
+  <artifactId>cpp-lexer</artifactId>
+  <version>1</version>
+  
+  <dependencies>
+    <dependency>
+		<groupId>org.antlr</groupId>
+		<artifactId>antlr4-runtime</artifactId>
+		<version>4.7.1</version>
+	</dependency>
+  </dependencies>
+  
+  <build>
+  <plugins>
+    <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+</project>
